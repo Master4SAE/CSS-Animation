@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@keyframes dogMove {
+    from {left:0px;}
+      to {left:500px;}
+}
+@keyframes duckMove {
+    from {left:0px;}
+      to {left:100vmax;}
+  }
+@keyframes dogWalk {
+    0% { background-position:0px 0px; }
+    3% { background-position:-120px 0px; }
+    6% { background-position:-240px 0px; }
+    9% { background-position:-360px 0px; }	
+    12% { background-position:0px 0px; }
+    15% { background-position:-120px 0px; }
+    18% { background-position:-240px 0px; }
+    21% { background-position:-360px 0px; }	
+    24% { background-position:0px 0px; }
+    27% { background-position:-120px 0px; }
+    30% { background-position:-240px 0px; }
+    33% { background-position:-360px 0px; }	
+    36% { background-position:0px 0px; }
+    39% { background-position:-120px 0px; }
+    42% { background-position:-240px 0px; }
+    45% { background-position:-360px 0px; }	
+    48% { background-position:0px 0px; }
+    51% { background-position:-120px 0px; }
+    54% { background-position:-240px 0px; }
+    57% { background-position:-360px 0px; }	
+    60% { background-position:0px 0px; }
+    63% { background-position:-120px 0px; }
+    66% { background-position:-240px 0px; }
+    69% { background-position:-360px 0px;  }
+    /* Snif  */
+    75% { background-position:-480px 0px; }  
+    76% { background-position:-360px 0px;  }
+    78% { background-position:-480px 0px;  }
+    81% { background-position:-360px 0px;  }
+    /* jump */
+    90% { background-position:-0px -110px; } 
+    93% {background-position:-120px -110px;} 
+    96% {background-position:-240px -110px;}
+    100% { background-position: 1000px 1000px; }
+  }
+  
+  @keyframes duckWing { 
+
+    0% { background-position:0px -220px;} 
+    1% { background-position:0px -220px;}
+    2% { background-position:0px -220px;}
+    3% { background-position:0px -220px;}
+    4% { background-position:0px -220px;}
+    5% { background-position:0px -220px;}
+
+    6% { background-position:-80px -220px;}
+    7% { background-position:-80px -220px;}
+    8% { background-position:-80px -220px;}
+    9% { background-position:-80px -220px;}
+    10% { background-position:-80px -220px;}
+
+    11% { background-position:-155px -220px;}
+    12% { background-position:-155px -220px;}
+    13% { background-position:-155px -220px;}
+    14% { background-position:-155px -220px;}
+    15% { background-position:-155px -220px;}
+
+    16% { background-position:0px -220px;}
+    17% { background-position:0px -220px;}
+    18% { background-position:0px -220px;}
+    19% { background-position:0px -220px;}
+    20% { background-position:0px -220px;}
+
+    25% { background-position:-80px -220px;}
+
+    30% { background-position:-155px -220px;}
+
+    35% { background-position:0px -220px;}
+
+    40% { background-position:-80px -220px;}
+
+    50% { background-position:-155px -220px;}
+
+    60% { background-position:0px -220px;}
+
+    70% { background-position:-80px -220px;}
+
+    80% { background-position:-155px -220px;}
+
+    100% { background-position:0px -220px;} 
+    
+  }
+  
+  
+#stage {
+    background: url(stage.png);
+    width:100%;
+    height:100vh;
+    overflow:hidden;
+}
+
+#dogIntro {
+    position:absolute;
+    bottom: 40px;
+    z-index:1;
+    background: url(sprite.png) no-repeat;
+    width: 120px; 
+    height: 100px;
+    animation: dogMove 2.8s linear forwards, dogWalk 4s step-start 1 forwards;
+} 
+#birdIntro {
+    position:absolute;
+    bottom: 450px;
+    z-index:1;
+    background: url(sprite.png) no-repeat;
+    width: 70px; 
+    height: 90px;
+    animation: duckMove 10.8s linear forwards, duckWing 11s step-start 1 forwards;
+} 
+  
+  
+  
+  
+  
+  
+  
+  
+  
